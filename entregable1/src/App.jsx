@@ -1,18 +1,16 @@
 
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import Navbar from './componentes/Navbar/Navbar'
 
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-
-import './App.css'
-
-function App() {
+const App = () => {
   return (
-    <>
-    <NavBar/>
-    <ItemListContainer greeting="hola usuario!"/>
-
-    </>
+    <div>
+      <Navbar/>
+      <ItemListContainer greetings = {"Hola, este es el greetings ingresado por props"}/>
+     
+    </div>
   )
 }
 
 export default App
+
